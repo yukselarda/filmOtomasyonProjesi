@@ -17,5 +17,20 @@ namespace filmOtomasyonProjesi
             InitializeComponent();
         }
 
+        private void btnHesapOlustur_Click(object sender, EventArgs e)
+        {
+            formHesapOlusturma f = new formHesapOlusturma();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            formSehir f = new formSehir();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }
